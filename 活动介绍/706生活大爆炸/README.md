@@ -1,3 +1,13 @@
+---
+title: README
+description: 
+published: true
+date: 2021-10-15T13:28:12.192Z
+tags: 
+editor: markdown
+dateCreated: 2021-10-14T15:49:08.328Z
+---
+
 **活动简介**
 
 在美剧《生活大爆炸》中，理论物理学家Sheldon，性感少女Penny，还有他们的三个好朋友，在温馨的家庭场景中，展开了丰富多彩的日常生活，向我们展示了各自不为人知的一面，这一面充满着不确定的创意、偶然、惊喜……
