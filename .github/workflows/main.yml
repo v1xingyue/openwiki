@@ -27,7 +27,6 @@ jobs:
       - name: 安装 GitBook CLI
         run: |
           npm install -g gitbook-cli
-          gitbook install
 
       - name: 构建 GitBook
         run: |
