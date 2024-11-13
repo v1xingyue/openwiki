@@ -30,10 +30,10 @@ jobs:
 
       - name: 构建文档
         run: |
-          honkit build ./mybook --log=error
+          honkit build . --log=error
 
       - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./mybook/_book
+          publish_dir: ./_book
