@@ -26,11 +26,11 @@ jobs:
 
       - name: 安装 GitBook CLI
         run: |
-          npm install -g gitbook-cli
+          npm install -g honkit
 
       - name: 构建 GitBook
         run: |
-          gitbook build
+          honkit build .
 
       - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
