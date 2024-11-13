@@ -22,7 +22,7 @@ jobs:
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '5'
+          node-version: '18'
 
       - name: 安装 GitBook CLI
         run: |
@@ -31,7 +31,7 @@ jobs:
 
       - name: 构建 GitBook
         run: |
-          gitbook build . --log=error
+          gitbook build ./mybook --gitbook=2.0.1 --log=error
 
       - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
