@@ -22,12 +22,12 @@ jobs:
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '10'
 
       - name: 安装 GitBook CLI
         run: |
           npm install -g gitbook-cli
-          gitbook install
+          gitbook fetch 2.0.1
 
       - name: 构建 GitBook
         run: |
