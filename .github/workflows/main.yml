@@ -28,6 +28,18 @@ jobs:
         run: |
           npm install -g honkit
 
+      - name: 准备文档目录
+        run: |
+          if [ ! -f "./README.md" ]; then
+            echo "# Documentation" > README.md
+            echo "This is the documentation home page." >> README.md
+          fi
+          if [ ! -f "./SUMMARY.md" ]; then
+            echo "# Summary" > SUMMARY.md
+            echo "" >> SUMMARY.md
+            echo "* [Introduction](README.md)" >> SUMMARY.md
+          fi
+
       - name: 构建文档
         run: |
           honkit build . --log=error
