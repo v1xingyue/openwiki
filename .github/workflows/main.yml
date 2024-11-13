@@ -22,15 +22,16 @@ jobs:
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: 安装 GitBook CLI
         run: |
-          npm install -g honkit
+          npm install -g gitbook-cli
+          gitbook install
 
       - name: 构建 GitBook
         run: |
-          honkit build .
+          gitbook build . --log=error
 
       - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
